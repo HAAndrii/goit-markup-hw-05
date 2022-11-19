@@ -730,9 +730,6 @@ img {
     transform-origin: 0 0;
     transform: translate(-50%, -50%) scale(1);
 
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -750,7 +747,13 @@ img {
 
 
 .modal-btn {
-    position: relative;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #FFFFFF;
     padding: 0;
     width: 30px;
@@ -758,12 +761,8 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
-
 }
 
 .modal-btn .icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    
 }
